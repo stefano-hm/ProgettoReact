@@ -1,10 +1,12 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { setSeconds, start, stop, reset } from '../store/timerSlice'
+import { setSeconds, start, stop, reset } from '../store/slices/timerSlice'
 import '../styles/Timer.css'
+import BackgroundAudio from './BackgroundAudio'
 
 export default function Timer() {
-  // Usa Redux per il timer
+  const [selectedSound, setSelectedSound] = useState('none')
+
   const seconds = useSelector((state) => state.timer.time)
   const isRunning = useSelector((state) => state.timer.isRunning)
   const dispatch = useDispatch()
@@ -28,9 +30,7 @@ export default function Timer() {
 
   const pauseTimer = () => dispatch(stop())
 
-  const resetTimer = () => {
-    dispatch(reset())
-  }
+  const resetTimer = () => dispatch(reset())
 
   const handleChange = (e) => {
     dispatch(setSeconds(Number(e.target.value) * 60))
@@ -45,6 +45,7 @@ export default function Timer() {
   return (
     <div className="timer-container">
       <h2>Timer di meditazione</h2>
+
       <input
         type="number"
         min="1"
@@ -52,12 +53,32 @@ export default function Timer() {
         onChange={handleChange}
         disabled={isRunning}
       />
+
+      <div className="audio-selector">
+        <label>Suono di sottofondo:</label>
+        <select
+          value={selectedSound}
+          onChange={(e) => setSelectedSound(e.target.value)}
+          disabled={isRunning}
+        >
+          <option value="none">Nessuno</option>
+          <option value="ocean">Onde del mare</option>
+          <option value="forest">Foresta</option>
+          <option value="rain">Pioggia</option>
+          <option value="nature">Natura</option>
+        </select>
+      </div>
+
       <div className="timer-time">{formatTime()}</div>
+
       <div className="timer-buttons">
         <button onClick={startTimer} disabled={isRunning}>Start</button>
         <button onClick={pauseTimer} disabled={!isRunning}>Pausa</button>
         <button onClick={resetTimer}>Reset</button>
       </div>
+
+      {/* Componente audio */}
+      <BackgroundAudio isRunning={isRunning} selectedSound={selectedSound} />
     </div>
   )
 }

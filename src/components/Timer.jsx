@@ -1,34 +1,39 @@
-import { useState, useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import { setSeconds, start, stop, reset } from '../store/timerSlice'
 import '../styles/Timer.css'
 
 export default function Timer() {
-  const [seconds, setSeconds] = useState(0)
-  const [isRunning, setIsRunning] = useState(false)
+  // Usa Redux per il timer
+  const seconds = useSelector((state) => state.timer.time)
+  const isRunning = useSelector((state) => state.timer.isRunning)
+  const dispatch = useDispatch()
   const intervalRef = useRef(null)
 
   useEffect(() => {
-    if (isRunning) {
+    if (isRunning && seconds > 0) {
       intervalRef.current = setInterval(() => {
-        setSeconds((prev) => prev - 1)
+        dispatch(setSeconds(seconds - 1))
       }, 1000)
     }
 
     return () => clearInterval(intervalRef.current)
-  }, [isRunning])
+  }, [isRunning, seconds, dispatch])
 
   const startTimer = () => {
-    if (seconds > 0) setIsRunning(true)
+    if (seconds > 0) {
+      dispatch(start())
+    }
   }
 
-  const pauseTimer = () => setIsRunning(false)
+  const pauseTimer = () => dispatch(stop())
 
   const resetTimer = () => {
-    setIsRunning(false)
-    setSeconds(0)
+    dispatch(reset())
   }
 
   const handleChange = (e) => {
-    setSeconds(Number(e.target.value) * 60)
+    dispatch(setSeconds(Number(e.target.value) * 60))
   }
 
   const formatTime = () => {

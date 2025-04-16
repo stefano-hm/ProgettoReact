@@ -7,15 +7,22 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     border-radius: 0 0 12px 12px;
     font-family: 'Arial', sans-serif;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
   
   .nav-logo {
     font-size: 1.5rem;
     font-weight: bold;
   }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
   
   .nav-links a {
-    margin-left: 1.5rem;
     text-decoration: none;
     color: #333;
     font-weight: 500;

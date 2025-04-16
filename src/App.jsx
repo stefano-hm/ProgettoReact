@@ -9,13 +9,17 @@ import Footer from './components/Footer'
 function App() {
   return (
     <BrowserRouter>
-    <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/guide" element={<Guide />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-    <Footer />
+      <div id="app-wrapper">
+        <Header />
+        <main className="main-content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/guide" element={<Guide />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
     </BrowserRouter>
   )
 }

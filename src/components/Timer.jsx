@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { setSeconds, start, stop, reset } from '../store/slices/timerSlice'
 import '../styles/Timer.css'
+import '../styles/media-queries.css'
 import BackgroundAudio from './BackgroundAudio'
 
 export default function Timer() {

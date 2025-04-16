@@ -28,6 +28,12 @@
     margin: 1rem 0;
     color: #5a189a;
   }
+
+  .timer-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   
   .timer-buttons button {
     margin: 0.5rem;

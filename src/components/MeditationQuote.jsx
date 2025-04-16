@@ -9,7 +9,7 @@ export default function MeditationQuote() {
         className="quote-image"
       />
       <blockquote>
-        “La meditazione non è sfuggire alla realtà, è entrare in essa.”  
+        “Meditation is not an escape from reality, it is a way of truly entering it.”  
         <span>– Thich Nhat Hanh</span>
       </blockquote>
     </div>

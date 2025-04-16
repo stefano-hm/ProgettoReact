@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { setSeconds, start, stop, reset } from '../store/slices/timerSlice'
 import '../styles/Timer.css'
-import '../styles/media-queries.css'
 import BackgroundAudio from './BackgroundAudio'
 
 export default function Timer() {
@@ -45,28 +44,28 @@ export default function Timer() {
 
   return (
     <div className="timer-container">
-      <h2>Timer di meditazione</h2>
+      <h2>Meditation Timer</h2>
 
       <input
         type="number"
         min="1"
-        placeholder="Minuti"
+        placeholder="Minutes"
         onChange={handleChange}
         disabled={isRunning}
       />
 
       <div className="audio-selector">
-        <label>Suono di sottofondo:</label>
+        <label>Background Sounds:</label>
         <select
           value={selectedSound}
           onChange={(e) => setSelectedSound(e.target.value)}
           disabled={isRunning}
         >
-          <option value="none">Nessuno</option>
-          <option value="ocean">Onde del mare</option>
-          <option value="forest">Foresta</option>
-          <option value="rain">Pioggia</option>
-          <option value="nature">Natura</option>
+          <option value="none">None</option>
+          <option value="ocean">Ocean Waves</option>
+          <option value="forest">Forest</option>
+          <option value="rain">Rain</option>
+          <option value="nature">Nature</option>
         </select>
       </div>
 
@@ -74,7 +73,7 @@ export default function Timer() {
 
       <div className="timer-buttons">
         <button onClick={startTimer} disabled={isRunning}>Start</button>
-        <button onClick={pauseTimer} disabled={!isRunning}>Pausa</button>
+        <button onClick={pauseTimer} disabled={!isRunning}>Pause</button>
         <button onClick={resetTimer}>Reset</button>
       </div>
 

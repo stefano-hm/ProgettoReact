@@ -11,9 +11,12 @@
   }
   
   .about-container h1 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     color: #5a189a;
+  }
+
+  .about-container section {
+    margin-bottom: 2rem;
   }
   
   .about-container .signature {

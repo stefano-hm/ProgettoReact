@@ -4,40 +4,36 @@ export default function Guide() {
     return (
       <>
         <div className="guide-container">
-          <h1>Guida alla meditazione</h1>
+          <h1>Meditation Guide</h1>
   
           <section>
-            <h2>Perché meditare</h2>
+            <h2>Why Meditate</h2>
             <p>
-              La meditazione è uno strumento potente per migliorare la consapevolezza, ridurre lo stress
-              e coltivare il benessere mentale. Anche pochi minuti al giorno possono fare la differenza.
+              Meditation is a powerful tool to enhance awareness, reduce stress, and cultivate mental well-being. Even a few minutes a day can make a real difference.
             </p>
           </section>
   
           <section>
-            <h2>Come iniziare</h2>
+            <h2>How to Start</h2>
             <p>
-              Trova un luogo tranquillo, siediti in una posizione comoda e imposta un timer. 
-              Respira profondamente, chiudi gli occhi e porta l'attenzione al respiro.
-              Se la mente si distrae, riportala gentilmente al presente.
+              Find a quiet place, sit in a comfortable position, and set a timer. Breathe deeply, close your eyes, and bring your attention to your breath. If your mind wanders, gently guide it back to the present moment.
             </p>
           </section>
   
           <section>
-            <h2>Tecniche comuni</h2>
+            <h2>Common Techniques</h2>
             <ul>
-              <li><strong>Respiro consapevole:</strong> focalizzati sul ritmo del tuo respiro.</li>
-              <li><strong>Body scan:</strong> osserva le sensazioni fisiche in ogni parte del corpo.</li>
-              <li><strong>Meditazione camminata:</strong> cammina lentamente prestando attenzione ai movimenti.</li>
-              <li><strong>Mantra:</strong> ripeti mentalmente una parola o frase per mantenere la concentrazione.</li>
+              <li><strong>Mindful breathing</strong>: focus on the rhythm of your breath.</li>
+              <li><strong>Body scan</strong>: observe physical sensations throughout your body.</li>
+              <li><strong>Walking meditation</strong>: walk slowly, paying attention to each movement.</li>
+              <li><strong>Mantra</strong>: silently repeat a word or phrase to maintain focus.</li>
             </ul>
           </section>
   
           <section>
-            <h2>Consigli utili</h2>
+            <h2>Helpful Tips</h2>
             <p>
-              Non serve essere perfetti: la pratica è più importante del risultato. Medita con regolarità, anche solo
-              per 5 minuti. Accogli ogni esperienza senza giudicarla.
+              You don't need to be perfect: practice is more important than the outcome. Meditate regularly, even if just for 5 minutes. Welcome every experience without judging it.
             </p>
           </section>
         </div>

@@ -1,7 +1,10 @@
 import '../styles/About.css'
+import BackgroundImage from '../components/BackgroundImage'
+
 
 export default function About() {
   return (
+    <>
     <div className="about-container">
       <section>
         <h1>The Experience</h1>
@@ -24,6 +27,8 @@ export default function About() {
       
       <p className="signature">✨ Breathe. Live. Slow down. ✨</p>
     </div>
+    <BackgroundImage />
+    </>
   )
 }
 

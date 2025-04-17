@@ -1,4 +1,5 @@
 import '../styles/Guide.css'
+import BackgroundImage from '../components/BackgroundImage'
 
 export default function Guide() {
     return (
@@ -37,6 +38,7 @@ export default function Guide() {
             </p>
           </section>
         </div>
+        <BackgroundImage />
       </>
     )
   }

@@ -2,7 +2,8 @@
   max-width: 800px;
   margin: 3rem auto;
   padding: 2.5rem;
-  background: linear-gradient(135deg, #e0f7f1 0%, #ffffff 100%);
+  background: rgba(255, 255, 255, 0.7); /* semi-trasparente */
+  backdrop-filter: blur(6px);
   border-radius: 24px;
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
   line-height: 1.8;
@@ -14,13 +15,14 @@
 .guide-container h1 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  color: #2a9d8f;
+  color: #1ea591;
   font-weight: bold;
 }
 
 .guide-container section {
   margin-bottom: 2.5rem;
-  background-color: #ffffffcc;
+  background-color: rgba(255, 255, 255, 0.6); /* anche qui trasparenza */
+  backdrop-filter: blur(4px);
   padding: 1.5rem;
   border-radius: 16px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);

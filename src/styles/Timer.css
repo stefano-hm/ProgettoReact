@@ -1,5 +1,6 @@
 .timer-container {
-  background: linear-gradient(145deg, #d0f4de, #fce3ec);
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(4px);
   border-radius: 24px;
   padding: 2rem;
   max-width: 420px;

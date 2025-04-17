@@ -1,39 +1,53 @@
 .guide-container {
-    max-width: 700px;
-    margin: 3rem auto;
-    padding: 2rem;
-    background: #ffffff;
-    border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-    line-height: 1.6;
-    color: #444;
-    text-align: center;
-  }
-  
-  .guide-container h1 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    color: #5a189a;
-  }
-  
-  .guide-container section {
-    margin-bottom: 2rem;
-  }
-  
-  .guide-container h2 {
-    margin-bottom: 0.5rem;
-    color: #333;
-  }
-  
-  .guide-container p, .guide-container ul {
-    line-height: 1.6;
-    color: #555;
-  }
-  
-  .guide-container ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  background: linear-gradient(135deg, #e0f7f1 0%, #ffffff 100%);
+  border-radius: 24px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  line-height: 1.8;
+  color: #3a3a3a;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.guide-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #2a9d8f;
+  font-weight: bold;
+}
+
+.guide-container section {
+  margin-bottom: 2.5rem;
+  background-color: #ffffffcc;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.guide-container h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: #264653;
+}
+
+.guide-container p,
+.guide-container ul {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+.guide-container ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  text-align: left;
+}
+
+.guide-container ul li {
+  margin-bottom: 0.5rem;
+}
+
   
   

@@ -1,10 +1,11 @@
 .footer {
-    background-color: #f8f4fc;
-    padding: 1rem;
-    text-align: center;
-    font-size: 0.9rem;
-    color: #666;
-    border-top: 1px solid #e0dede;
-    margin-top: 4rem;
-  }
-  
+  background: linear-gradient(90deg, #d0f4de 0%, #e9d6f3 100%);
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #444;
+  border-top: 1px solid #ccc;
+  margin-top: 4rem;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.08);
+}

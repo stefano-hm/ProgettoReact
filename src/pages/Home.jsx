@@ -1,13 +1,13 @@
 import Timer from '../components/Timer'
-import MeditationQuote from '../components/MeditationQuote'
+import MeditationQuotes from '../components/MeditationQuotes'
 import BackgroundImage from '../components/BackgroundImage'
 
 export default function Home() {
   return (
     <div>
       <BackgroundImage />
+      <MeditationQuotes />
       <Timer />
-      <MeditationQuote />
     </div>
   )
 }

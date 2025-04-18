@@ -39,6 +39,7 @@ L'applicazione sarà disponibile su http://localhost:5173.
 ## Struttura del progetto
 Il progetto è strutturato come segue:
 
+```
 meditation-app/
 ├── public/
 │   ├── favicon/

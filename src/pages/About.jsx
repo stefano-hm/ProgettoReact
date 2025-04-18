@@ -1,5 +1,6 @@
 import '../styles/About.css'
 import BackgroundImage from '../components/BackgroundImage'
+import '../styles/about-media.css';
 
 
 export default function About() {

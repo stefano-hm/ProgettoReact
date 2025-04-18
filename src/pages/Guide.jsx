@@ -1,5 +1,6 @@
 import '../styles/Guide.css'
 import BackgroundImage from '../components/BackgroundImage'
+import '../styles/guide-media.css';
 
 export default function Guide() {
     return (

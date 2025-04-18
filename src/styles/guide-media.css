@@ -1,0 +1,64 @@
+/* Fino a 768px - smartphone */
+@media (max-width: 768px) {
+    .guide-container {
+      margin: 2rem 1rem;
+      padding: 2rem 1.5rem;
+      border-radius: 16px;
+    }
+  
+    .guide-container h1 {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    .guide-container section {
+      padding: 1rem;
+      margin-bottom: 2rem;
+      border-radius: 12px;
+    }
+  
+    .guide-container h2 {
+      font-size: 1.2rem;
+      margin-bottom: 0.6rem;
+    }
+  
+    .guide-container p,
+    .guide-container ul {
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+  
+    .guide-container ul {
+      padding-left: 1.2rem;
+    }
+  }
+  
+  /* Da 768px a 961px - tablet */
+  @media (min-width: 769px) and (max-width: 961px) {
+    .guide-container {
+      margin: 2.5rem 2rem;
+      padding: 2.5rem 2rem;
+    }
+  
+    .guide-container h1 {
+      font-size: 2.2rem;
+      margin-bottom: 2rem;
+    }
+  
+    .guide-container section {
+      padding: 1.2rem;
+      margin-bottom: 2.2rem;
+    }
+  
+    .guide-container h2 {
+      font-size: 1.4rem;
+      margin-bottom: 0.7rem;
+    }
+  
+    .guide-container p,
+    .guide-container ul {
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+  }
+  

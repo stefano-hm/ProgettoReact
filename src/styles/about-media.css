@@ -1,0 +1,43 @@
+/* Fino a 768px - smartphone */
+@media (max-width: 768px) {
+    .about-container {
+      margin: 2rem 1rem;
+      padding: 2rem 1.5rem;
+      border-radius: 16px;
+    }
+  
+    .about-container h1 {
+      font-size: 1.6rem;
+    }
+  
+    .about-container p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+  
+    .about-container .signature {
+      font-size: 0.95rem;
+    }
+  }
+  
+  /* Da 768px a 961px - tablet */
+  @media (min-width: 769px) and (max-width: 961px) {
+    .about-container {
+      margin: 2.5rem 2rem;
+      padding: 2.5rem 2rem;
+    }
+  
+    .about-container h1 {
+      font-size: 1.8rem;
+    }
+  
+    .about-container p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+  
+    .about-container .signature {
+      font-size: 1rem;
+    }
+  }
+  

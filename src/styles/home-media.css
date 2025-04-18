@@ -1,0 +1,101 @@
+@media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem;
+    }
+  
+    .navbar a {
+      font-size: 1rem;
+    }
+  
+
+    .meditation-quotes-container {
+      padding: 1.5rem;
+      margin: 2rem 1rem;
+      font-size: 1.2rem;
+      min-height: 100px;
+      border-radius: 12px;
+    }
+  
+    .meditation-quotes-container blockquote {
+      font-size: 1.2rem;
+    }
+  
+    .meditation-quotes-container blockquote span {
+      font-size: 0.9rem;
+    }
+  
+    .meditation-quotes-container::before,
+    .meditation-quotes-container::after {
+      font-size: 3rem;
+    }
+  
+
+    .timer-container {
+      width: 50%; 
+      margin: 0 auto; 
+      padding: 1.5rem;
+      min-width: 280px;
+    }
+  
+    .timer-time {
+      font-size: 3rem;
+    }
+  
+    .timer-buttons button {
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+      margin: 0.5rem;
+    }
+  
+    .sound-selector {
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+  
+    .sound-selector select {
+      width: 100%;
+      padding: 0.6rem;
+    }
+  }
+
+  
+@media screen and (min-width: 768px) and (max-width: 961px) {
+    .timer-container {
+      max-width: 600px;
+      min-width: 330px;
+      margin: 2rem auto;
+      padding: 2rem;
+      font-size: 1.2rem;
+    }
+  
+
+    .meditation-quotes-container {
+      margin: 2rem 2.5rem;
+      padding: 2rem;
+      font-size: 1.4rem;
+    }
+  
+    .meditation-quotes-container blockquote {
+      font-size: 1.4rem;
+    }
+  
+    
+    .guide-container,
+    .about-container {
+      padding: 2rem;
+      margin: 2rem auto;
+    }
+  
+    .guide-container h1,
+    .about-container h1 {
+      font-size: 2rem;
+    }
+  
+    .guide-container section,
+    .about-container section {
+      padding: 1rem;
+    }
+  }
+    

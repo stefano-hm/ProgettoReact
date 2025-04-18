@@ -23,14 +23,17 @@ Per eseguire il progetto localmente, assicurati di avere installato:
    ```bash
    git clone https://github.com/tuo-utente/meditation-app.git
    cd meditation-app
-Installa le dipendenze:
+   
+2. Installa le dipendenze:
 
-bash
-npm install
-Avvia il server di sviluppo:
+   ```bash
+   npm install
+   
+3. Avvia il server di sviluppo:
 
-bash
-npm start
+   ```bash
+   npm start
+   
 L'applicazione sarà disponibile su http://localhost:5173.
 
 ## Struttura del progetto

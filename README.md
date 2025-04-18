@@ -1,46 +1,49 @@
 # Meditation App
 
-Meditation App è un'applicazione web progettata per aiutarti a meditare, con un timer personalizzabile e suoni di sottofondo per creare un'atmosfera rilassante. Il timer può essere avviato, messo in pausa e resettato, con la possibilità di scegliere tra diversi suoni naturali come onde, pioggia, foresta e natura.
+Meditation App is a web application designed to help you meditate, with a customizable timer and background sounds to create a relaxing atmosphere. The timer can be started, paused, and reset, with the option to choose between various natural sounds like waves, rain, forest, and nature.
 
-## Funzionalità
+## Features
 
-- **Timer di meditazione personalizzabile**: Imposta il timer in minuti e avvialo per la tua sessione di meditazione.
-- **Suoni di sottofondo**: Scegli tra suoni di pioggia, onde, foresta e natura per creare un ambiente tranquillo durante la meditazione.
-- **Interfaccia semplice e responsiva**: L'interfaccia si adatta a dispositivi mobili, tablet e desktop.
-- **Citazioni motivazionali**: Ogni tanto, una citazione di meditazione viene visualizzata per ispirarti.
+- **Customizable meditation timer**: Set the timer in minutes and start it for your meditation session.
+- **Background sounds**: Choose from rain, waves, forest, and nature sounds to create a calm environment during meditation.
+- **Simple and responsive interface**: The interface adapts to mobile devices, tablets, and desktops.
+- **Motivational quotes**: Occasionally, a meditation quote is displayed to inspire you.
 
-## Prerequisiti
+## Prerequisites
 
-Per eseguire il progetto localmente, assicurati di avere installato:
+To run the project locally, make sure you have installed:
 
-- [Node.js](https://nodejs.org/) (versione 16.x o superiore)
-- [npm](https://www.npmjs.com/) (installato automaticamente con Node.js)
+- [Node.js](https://nodejs.org/) (version 16.x or higher)
+- [npm](https://www.npmjs.com/) (automatically installed with Node.js)
 
-## Installazione
+## Installation
 
-1. Clona il repository:
+1. Clone the repository:
 
    ```bash
-   git clone https://github.com/tuo-utente/meditation-app.git
+   git clone https://github.com/your-username/meditation-app.git
    cd meditation-app
-   
-2. Installa le dipendenze:
+
+2. Install dependencies:
 
    ```bash
    npm install
-   
-3. Avvia il server di sviluppo:
+
+3. Start the development server:
 
    ```bash
    npm start
-   
-L'applicazione sarà disponibile su http://localhost:5173.
 
-## Struttura del progetto
-Il progetto è strutturato come segue:
+The application will be available at http://localhost:5173.
 
-```
-meditation-app/
+## Project structure
+
+The project is structured as follows:
+
+   ```bash
+   meditation-app/
+├── index.html
+├── package.json
 ├── public/
 │   ├── favicon/
 │   │   ├── android-chrome-192x192.png
@@ -52,71 +55,72 @@ meditation-app/
 │   │   └── site.webmanifest
 │   ├── images/
 │   │   └── logo.PNG
-│   ├── sounds/
-│   │   ├── forest.mp3
-│   │   ├── nature.mp3
-│   │   ├── ocean.mp3
-│   │   └── rain.mp3
-│
+│   └── sounds/
+│       ├── forest.mp3
+│       ├── nature.mp3
+│       ├── ocean.mp3
+│       └── rain.mp3
 ├── src/
+│   ├── App.jsx
+│   ├── main.jsx
 │   ├── components/
 │   │   ├── BackgroundAudio.jsx
 │   │   ├── BackgroundImage.jsx
 │   │   ├── Footer.jsx
 │   │   ├── Header.jsx
-│   │   ├── MeditationQuotes.jsx
+│   │   ├── MeditatioQuotes.jsx
 │   │   └── Timer.jsx
 │   ├── pages/
 │   │   ├── About.jsx
 │   │   ├── Guide.jsx
 │   │   └── Home.jsx
 │   ├── store/
-│   │   ├── slices/
-│   │   │   └── timerSlice.js
-│   │   └── index.js
-│   ├── styles/
-│   │   ├── about-media.css
-│   │   ├── About.css
-│   │   ├── BackgroundImage.css
-│   │   ├── Footer.css
-│   │   ├── global.css
-│   │   ├── guide-media.css
-│   │   ├── Guide.css
-│   │   ├── Header.css
-│   │   ├── home-media.css
-│   │   ├── Logo.css
-│   │   ├── MeditationQuotes.css
-│   │   └── Timer.css
-│   ├── App.jsx
-│   └── main.jsx
-│
-├── index.html
-├── package.json
+│   │   ├── index.js
+│   │   └── slices/
+│   │       └── timerSlice.js
+│   └── styles/
+│       ├── about-media.css
+│       ├── About.css
+│       ├── BackgroundImage.css
+│       ├── Footer.css
+│       ├── global.css
+│       ├── guide-media.css
+│       ├── Guide.css
+│       ├── Header.css
+│       ├── home-media.css
+│       ├── Logo.css
+│       ├── MeditationQuotes.css
+│       └── Timer.css
 
+   ``` 
 
+## Contributing
 
-## Contribuire
-Se desideri contribuire al progetto, segui questi passaggi:
+If you’d like to contribute to the project, follow these steps:
 
-1. Forka il repository.
-2. Crea un nuovo branch: git checkout -b nome-branch.
-3. Fai le tue modifiche e commit: git commit -am 'Aggiungi una descrizione delle modifiche'.
-4. Push sul tuo branch: git push origin nome-branch.
-5. Crea una pull request.
+1. Fork the repository.
+2. Create a new branch: ```git checkout -b branch-name.```
+3. Make your changes and commit: ```git commit -am 'Add a description of your changes'.```
+4. Push to your branch: ```git push origin branch-name.```
+5. Create a pull request.
 
-## Licenza
-Distribuito sotto la licenza MIT. Vedi il file LICENSE per i dettagli.
+## License
 
+Distributed under the MIT License. See the LICENSE file for details.
 
-### Cosa contiene il README?
+## What's in the README?
 
-- **Descrizione del progetto**: Una breve panoramica di cosa fa l'app e quali sono le sue funzionalità principali.
-- **Prerequisiti**: Gli strumenti necessari per eseguire il progetto localmente.
-- **Installazione**: I passaggi per configurare l'ambiente di sviluppo e avviare l'app.
-- **Struttura del progetto**: Una panoramica della struttura delle cartelle e dei file principali.
-- **Contribuire**: Come contribuire al progetto.
-- **Licenza**: Una nota sulla licenza del progetto.
+**Project description**: A brief overview of what the app does and its main features.
 
-Puoi personalizzare ulteriormente il file `README.md` aggiungendo altre sezioni come la configurazione di CI/CD o altre informazioni che ritieni utili per i contributori e gli sviluppatori.
+**Prerequisites**: Tools needed to run the project locally.
 
-Se hai bisogno di modifiche o aggiustamenti, fammi sapere!
+**Installation**: Steps to set up the development environment and run the app.
+
+**Project structure**: An overview of the main folders and files.
+
+**Contributing**: How to contribute to the project.
+
+**License**: A note about the project license.
+
+You can further customize the README.md file by adding other sections like CI/CD setup or additional information useful for contributors and developers.
+

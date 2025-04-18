@@ -40,7 +40,6 @@ L'applicazione sarà disponibile su http://localhost:5173.
 Il progetto è strutturato come segue:
 
 meditation-app/
-│
 ├── public/
 │   ├── favicon/
 │   │   ├── android-chrome-192x192.png
@@ -94,18 +93,15 @@ meditation-app/
 ├── package.json
 
 
+
 ## Contribuire
 Se desideri contribuire al progetto, segui questi passaggi:
 
-Forka il repository.
-
-Crea un nuovo branch: git checkout -b nome-branch.
-
-Fai le tue modifiche e commit: git commit -am 'Aggiungi una descrizione delle modifiche'.
-
-Push sul tuo branch: git push origin nome-branch.
-
-Crea una pull request.
+1. Forka il repository.
+2. Crea un nuovo branch: git checkout -b nome-branch.
+3. Fai le tue modifiche e commit: git commit -am 'Aggiungi una descrizione delle modifiche'.
+4. Push sul tuo branch: git push origin nome-branch.
+5. Crea una pull request.
 
 ## Licenza
 Distribuito sotto la licenza MIT. Vedi il file LICENSE per i dettagli.

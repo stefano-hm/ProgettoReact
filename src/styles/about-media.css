@@ -1,4 +1,3 @@
-/* Fino a 768px - smartphone */
 @media (max-width: 768px) {
     .about-container {
       margin: 2rem 1rem;
@@ -20,8 +19,8 @@
     }
   }
   
-  /* Da 768px a 961px - tablet */
-  @media (min-width: 769px) and (max-width: 961px) {
+
+@media (min-width: 769px) and (max-width: 961px) {
     .about-container {
       margin: 2.5rem 2rem;
       padding: 2.5rem 2rem;

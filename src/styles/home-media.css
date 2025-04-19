@@ -1,15 +1,4 @@
 @media (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-      gap: 1rem;
-      padding: 1rem;
-    }
-  
-    .navbar a {
-      font-size: 1rem;
-    }
-  
-
     .meditation-quotes-container {
       padding: 1.5rem;
       margin: 2rem 1rem;
@@ -29,6 +18,16 @@
     .meditation-quotes-container::before,
     .meditation-quotes-container::after {
       font-size: 3rem;
+    }
+
+    .meditation-quotes-container::before {
+      top: -15px;
+      left: 10px;
+    }
+
+    .meditation-quotes-container::after {
+      bottom: -40px;
+      right: 20px;
     }
   
 

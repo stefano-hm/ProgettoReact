@@ -19,9 +19,9 @@ export default function MeditationQuotes() {
         setCurrentQuote(quotes[nextIndex]);
         return nextIndex;
       });
-    }, 5000); // Cambia la frase ogni 5 secondi
+    }, 5000); 
 
-    return () => clearInterval(interval); // Pulisce l'intervallo quando il componente viene smontato
+    return () => clearInterval(interval); 
   }, []);
 
   return (
